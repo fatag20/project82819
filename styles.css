@@ -1,3 +1,17 @@
+body{
+    background-color: #57EDF0;
+    color : #613300;
+
+}
 h1{
+    color : #113739;
+
     font-family: arial, sans-serif;
+}
+h2{
+    font-family: garamond;
+    font-size: 20px;
+    color: #550858
+    
+
 }
