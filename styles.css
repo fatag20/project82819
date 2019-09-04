@@ -12,16 +12,18 @@ p.a{
     font-size: 20px;
     font-style: italic;
 }
+p.b{
+    color: #550858;
+}
+p.heavy{
+    
+}
+p1{
+    font-family: Arial
+}
 h1{
     color : #113739;
     font-size: 60px;
 
     font-family: impact;
-}
-h2{
-    font-family: garamond;
-    font-size: 40px;
-    color: #550858
-    
-
 }
