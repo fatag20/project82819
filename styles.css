@@ -1,16 +1,26 @@
 body{
     background-color: #57EDF0;
     color : #613300;
+    font-size: 20px;
 
+}
+p{
+    font-size: 20px;
+    margin-left: 10px;
+}
+p.a{
+    font-size: 20px;
+    font-style: italic;
 }
 h1{
     color : #113739;
+    font-size: 60px;
 
-    font-family: arial, sans-serif;
+    font-family: impact;
 }
 h2{
     font-family: garamond;
-    font-size: 20px;
+    font-size: 40px;
     color: #550858
     
 
