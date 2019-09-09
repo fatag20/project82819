@@ -2,28 +2,42 @@ body{
     background-color: #57EDF0;
     color : #613300;
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom:10px;
 
 }
 p{
+    margin-top:0px;
+    margin-left: 10px; 
     font-size: 20px;
-    margin-left: 10px;
+
 }
 p.a{
     font-size: 20px;
     font-style: italic;
 }
 p.b{
+    margin: 10px;
+    margin-left: 0px;
+    font-size: 60px;
     color: #550858;
-}
-p.heavy{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif
     
 }
-p1{
-    font-family: Arial
+
+pre{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-family: Arial;
+    color: #550858
 }
 h1{
     color : #113739;
     font-size: 60px;
-
     font-family: impact;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom:10px;
 }
