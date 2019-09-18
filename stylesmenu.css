@@ -1,4 +1,9 @@
-.gridmenu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+.beanburrito {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+.subboxes {
+    border-style: solid;
 }
