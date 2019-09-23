@@ -1,9 +1,38 @@
-.beanburrito {
+.itemrow {
     display: flex;
     flex-direction: row;
     flex: 1;
+    margin: 4px;
 
 }
 .subboxes {
+    text-align: center;
+    display: inline-block;
     border-style: solid;
+    height: 30vh;
+    width: 60vh;
+    margin: 4px;
+}
+.labelrow {
+    display: flex;
+}
+.lrb {
+    
+    height: 10vh;
+    width: 60vh;
+    margin: 4px;
+    position: relative;
+}
+.lrb > p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+h2 {
+    font-size: 4vh;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
 }
