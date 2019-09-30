@@ -27,13 +27,13 @@
 @media only screen and (max-width:600px){
     .itemrow{
         display:block;
-
-
+    }
+    .labelrow{
+        display:block;
     }
 }
 h2 {
     font-size: 4vh;
-
 }
 img {
     max-width:100%;
