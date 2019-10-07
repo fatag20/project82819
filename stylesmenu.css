@@ -3,7 +3,11 @@
     flex-direction: row;
     flex: 1;
     margin: 4px;
+    
 
+}
+body {
+    background-color: #00FFFF
 }
 .subboxes {
     text-align: center;
@@ -12,17 +16,23 @@
     height: 30vh;
     width: 60vh;
     margin: 4px;
+    background-color: #01FF70
 }
 .labelrow {
     display: flex;
     position: relative;
+    
 }
 .lrb {
     width: 60vh;
     margin: 8px;
+    background-color: #40E0D0
 }
 .header {
     display: flex;
+}
+.headerlabel{
+    background-color: #008080
 }
 @media only screen and (max-width:600px){
     .itemrow{
@@ -40,135 +50,3 @@ img {
     max-height:100%;
 }
 
-/** Burger Code **/
-    @import url('https://fonts.googleapis.com/css?family=Yeseva+One|PT+Sans|Molle:400i|BioRhyme&display=swap');
-
-/* @import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/BurgerSqueeze/styles.scss');
-@import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/Burger/styles.scss'); */
-
-@import url('burger-styles.scss');
-:root {
-    --pink1: #ff55ed;
-    --pink2: #ff00ba;
-    --pink3: #ffcce8;
-    --purple1: #9800ff;
-    --purple2: #6600aa;
-    --purple3: #ddaaff;
-    --blue1: #55eeff;
-    --blue2: #666ccc;
-    --blue3: #0027ff;
-    --mint1: #aaffdd;
-    --mint2: #55ffbb;
-    --lime1: #99ff55;
-    --lime2: #12ff00;
-    --sage1: #44aa00;
-    --hunter1: #005533;
-    --gold1: #ffd800;
-    --yellow1: #fff433;
-    --yellow2: #fff999;
-    --orange1: #ff8f33;
-}
-
-body {
-    font-family: 'PT Sans', Calibri, Verdana, sans-serif;
-    background-color: var(--yellow1);
-    padding: 0%;
-}
-
-main {
-    padding: 1em 3em;
-    background-color: whitesmoke;
-    margin: 0%;
-}
-
-header {
-    text-align: center;
-    padding-bottom: 2em;
-}
-
-
-/* further down the list are backup font families */
-
-h2,
-h3,
-h4 {
-    font-family: 'Yeseva One', Cambria, 'Bookman Old Style', serif;
-}
-
-h1 {
-    font-family: BioRhyme, Cambria, 'Bookman Old Style', serif;
-    font-size: 4em;
-    margin: 0px;
-}
-
-.extra {
-    font-family: 'Molle', cursive;
-    font-size: 2em;
-    vertical-align: middle;
-    color: var(--purple2);
-}
-
-@media (min-width: 601px) {
-    #main-nav {
-        margin: 0%;
-        padding: 0%;
-        display: block !important;
-    }
-}
-
-nav ul {
-    list-style-type: none;
-    /* position: relative; */
-    padding: 0%;
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--pink1);
-}
-
-nav ul li {
-    width: 100px;
-    text-align: center;
-    display: inline-block;
-    /* float: left; */
-    /* margin: 0%; */
-    background-color: var(--purple2);
-    padding: 1em 0em;
-    flex-grow: 1;
-    margin: .5em;
-}
-
-#main-nav a {
-    text-decoration: none;
-    color: var(--yellow2);
-    /*why isn't this working?*/
-}
-
-.hamburger {
-    display: none;
-}
-
-@media (max-width: 600px) {
-    .hamburger {
-        width: 3em;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        display: block;
-        margin: 0em;
-    }
-    nav {
-        position: fixed;
-        top: 3em;
-        left: 0em;
-        /* display: none; */
-        z-index: 2;
-        transition: display 1s;
-    }
-    nav ul li {
-        display: block;
-        margin: 0em;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-}
