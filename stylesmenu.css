@@ -106,7 +106,7 @@ img {
 
 
 
-@media /*(max-width: 700px)*/ (max-width: 51em) /*and (min-resolution: 200dpi)*/ {
+@media /*(max-width: 700px)*/ (max-width: 52em) /*and (min-resolution: 200dpi)*/ {
     body {
         background-position: 10vw 10vh;
     }
