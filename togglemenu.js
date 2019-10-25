@@ -1,4 +1,4 @@
-function toggleMenu() {
+/*function toggleMenu() {
     if (document.getElementById("main-nav").style.height == "0px") {
         var numChildren = document.getElementById("main-nav").childNodes.length;
         var heightFactor = window.getComputedStyle(document.body).getPropertyValue('--height-factor');
@@ -9,8 +9,8 @@ function toggleMenu() {
         document.getElementById("main-nav").style.height = "0px";
         document.getElementById("burger").classList.remove("open");
     }
-}
-/*function toggleMenu() {
+}*/
+function toggleMenu() {
     if (document.getElementById("main-nav").style.height == "0px") {
         var numChildren = document.getElementById("main-nav").childNodes.length;
         document.getElementById("main-nav").style.height = (numChildren * 1.5) + "em";
@@ -19,4 +19,4 @@ function toggleMenu() {
         document.getElementById("main-nav").style.height = "0px";
         document.getElementById("burger").classList.remove("open");
     }
-}*/
+}

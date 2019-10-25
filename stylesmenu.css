@@ -50,60 +50,63 @@ img {
     max-width:100%;
     max-height:100%;
 }
+@media (min-width: 52em) and (max-resolution: 199dpi){
+    #main-nav {
+        margin: 0%;
+        padding: 0%;
+        height: auto !important;
+    }
+    .last {
+        margin-right: .5em;
+    }
+    .first {
+        margin-left: .5em;
+    }
+    nav ul {
+        list-style-type: none;
+        /* position: relative; */
+        padding: 0%;
+        display: flex;
+        /* justify-content: space-between; */
+        background-color: #ff6781;
+    }
+    
+    .current {
+        background-color: #ff6781;
+    }
+    
+    nav ul li {
+        width: 100px;
+        text-align: center;
+        display: inline-block;
+        /* float: left; */
+        /* margin: 0%; */
+        /*background-color: #ff6781;*/
+        padding: 1em 0em;
+        flex-grow: 1;
+        margin: .5em .25em;
+        /* color: var(--yellow2); */
+    }
+    
+    nav ul li:hover {
+        color: #331a53;
+    }
+    
+    #main-nav a {
+        text-decoration: none;
+        color: #ffffff;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+}
 
-#main-nav {
-    margin: 0%;
-    padding: 0%;
-    height: auto !important;
 
-}
-.last {
-    margin-right: .5em;
-}
-.first {
-    margin-left: .5em;
-}
 
-nav ul {
-    list-style-type: none;
-    /* position: relative; */
-    padding: 0%;
-    display: flex;
-    /* justify-content: space-between; */
-    background-color: var(#ff6781);
-}
-
-.current {
-    background-color: var(#ff6781);
-}
-
-nav ul li {
-    width: 100px;
-    text-align: center;
-    display: inline-block;
-    /* float: left; */
-    /* margin: 0%; */
-    background-color: var(#ff6781);
-    padding: 1em 0em;
-    flex-grow: 1;
-    margin: .5em .25em;
-    /* color: var(--yellow2); */
-}
-
-nav ul li:hover {
-    background-color: var(#ff6781);
-}
-
-#main-nav a {
-    text-decoration: none;
-    color: var(#ff6781);
-    width: 100%;
-    height: 100%;
-}
-.hamburger {
-    display: none;
-}
-@media (max-width: 700px) {
+@media /*(max-width: 700px)*/ (max-width: 51em) /*and (min-resolution: 200dpi)*/ {
     body {
         background-position: 10vw 10vh;
     }
@@ -115,12 +118,12 @@ nav ul li:hover {
         left: 0%;
         display: inline-block;
         margin: 0em;
-        background-color: var(#ff6781);
+        /*background-color: #ff6781;*/
         /* padding: .5em; */
     }
     nav {
         position: fixed;
-        background-color: var(#ff6781);
+        background-color: #ff6781;
         top: 0em;
         left: 0em;
         /* margin: 0em; */
@@ -138,5 +141,11 @@ nav ul li:hover {
         margin: 0em;
         transition: height .75s;
         height: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .extra {
+        font-size: 1em;
     }
 }
