@@ -92,6 +92,18 @@ h2{
     .hamburger {
         display: none;
     }
+    /*
+        cart
+    */
+    #cart-content {
+        display: none;
+    }
+    
+    #cart-area {
+        position: fixed;
+        right: 1em;
+        top: 1em;
+    }
 }
 
 
