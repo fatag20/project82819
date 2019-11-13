@@ -19,4 +19,7 @@ function navigateTo(page) {
         }
     });
     includeHTML();
+    if (page == "menu"){
+        populateFood();
+    }
 }

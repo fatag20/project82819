@@ -80,9 +80,9 @@
                 },
                 {
                     "name":"Choice of Juice",
-                    "description":"",
-                    "image":"",
-                    "price":
+                    "description":"apple, orange, grape",
+                    "image":"https://www.modernhoney.com/wp-content/uploads/2018/09/Healthy-Juice-Cleanse-Recipes-1.jpg",
+                    "price":0.30
                 }
 
             ]

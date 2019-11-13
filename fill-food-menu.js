@@ -2,7 +2,7 @@ let orderArray = [];
 
 const populateFood = async function() {
     // console.dir(menuFile);
-    $.getJSON("menu-items.json", function(menuData) {
+    $.getJSON("data/menu-items.json", function(menuData) {
         // console.dir(menuData.menu[0].items[0]);
         console.dir(menuData);
         const foodMenuElement = document.getElementById("food-menu"); // step 1: get parent element from document
@@ -27,17 +27,7 @@ const populateFood = async function() {
                 itemPrice = document.createElement("b");
                 itemPrice.innerText = '$' + item.price;
                 categorySection.appendChild(itemPrice);
-                if (item.image) {
-                    itemImage = document.createElement("img");
-                    itemImage.setAttribute("src", item.image); //setAttribute
-                    itemImage.style.background
-                    categorySection.appendChild(itemImage);
-                    categorySize++;
-                }
-                categorySize++;
-                console.log(categorySize + category.name);
-                categorySection.setAttribute("style", "grid-row: span " + categorySize);
-                =
+                // button for online ordering
                 button = document.createElement("button");
                 button.innerText = "Add to Online Order";
                 button.onclick = function() {
@@ -45,13 +35,18 @@ const populateFood = async function() {
                     updateCart(orderArray);
                 }
                 categorySection.appendChild(button);
+                // optional image
+                if (item.image) {
+                    itemImage = document.createElement("img");
+                    itemImage.setAttribute("src", item.image); //setAttribute
+                    // itemImage.style.background
+                    categorySection.appendChild(itemImage);
+                    categorySize++;
+                }
+                categorySize++;
+                console.log(categorySize + category.name);
+                categorySection.setAttribute("style", "grid-row: span " + categorySize);
             });
         });
     });
-    $.each($("#food-menu img"), function(element) {
-        console.log(element);
-        let totalHeightPadding = (element.width() - element.height()) / 2;
-        element.style.padding = totalHeightPadding + "px" + " 0px ";
-    });
 }
-
