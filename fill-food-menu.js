@@ -49,7 +49,7 @@ const populateFood = async function() {
                 /*categorySize++;
                 console.log(categorySize + category.name);
                 categorySection.setAttribute("style", "grid-row: span " + categorySize);*/
-
+                /*for each loop here*/
             });
         });
     });
