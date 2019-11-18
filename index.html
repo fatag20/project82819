@@ -20,9 +20,8 @@
         </h1>-->
         <!--<div w3-include-html="banner.html"></div>-->
         <header w3-include-html="header.html"></header>
-        <section id="cart-area" w3-include-html="cart.html"></section>
         <nav w3-include-html="nav-menu.html"></nav>
-        <main w3-include-html="menu.html"></main>
+        <!--<main w3-include-html="menu.html"></main>-->
         
         <p class="a" style="text-align:center"> 
         
@@ -40,7 +39,7 @@
         <pre> Phone: 389-333-2222<br> Address: 1822 Duncan Street, Yorktown, California </pre>
         
         <script>
-            window.onload = aync function() {
+            window.onload = async function() {
                 await includeHTML();
                 console.log("script called")
                 await updateCart();

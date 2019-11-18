@@ -1,88 +1,73 @@
 {
-    "menu": 
-    [
-        {
+    "menu": [{
             "name": "Food",
-            "items": 
-            [
-                {
-                    "name": "Bean Burrito",
-                    "description": "mashed beans, sour cream",
-                    "image": "https://amindfullmom.com/wp-content/uploads/2018/02/Easy-Veggie-Bean-Burrito.jpg",
-                    "price": 6.25
-                }, {
-                    "name": "Supreme Burrito",
-                    "description": "burrito with beef, cheese, mashed beans, rice, avocado paste, tomatoes, lettuce, corn, and sourcream",
-                    "image": "https://twohealthykitchens.com/wp-content/uploads/2017/06/Taco-Cones-Ta-Cones-square.jpg",
-                    "price": 8.00
-                }, {
-                    "name":"Bean Taco",
-                    "description":"beans, lettuce, tomatoes",
-                    "image":"https://www.tacobell.com/medias/vegan-hero-001.jpg?context=bWFzdGVyfHJvb3R8ODMwNjR8aW1hZ2UvanBlZ3xoODcvaGQ5Lzg4MDY3NjE1MjkzNzQuanBnfDYyYTBmZWJlOWYyOTdkODNjYmU5OGIzNzM2NGFhZDJjNmFiZTkyZDk0ZDE3OTQ5OWM3NDRmMjhlMDkxY2ExOGE",
-                    "price":5.25
-                }, {
-                    "name":"Beaf Taco",
-                    "description":"beaf, cheese, lettuce, tomatoes",
-                    "image":"https://www.lakegenevacountrymeats.com/wp-content/uploads/Ground-Beef-Tacos.jpg",
-                    "price":6.00
-                }, {
-                    "name":"Supreme Taco",
-                    "description":"",
-                    "image":"https://carlsbadcravings.com/wp-content/uploads/2019/08/carne-asada-street-tacos-21-1.jpg",
-                    "price":7.35 
-                }
-            ]
+            "items": [{
+                "name": "Bean Burrito",
+                "description": "mashed beans, sour cream",
+                "image": "https://amindfullmom.com/wp-content/uploads/2018/02/Easy-Veggie-Bean-Burrito.jpg",
+                "price": 6.25
+            }, {
+                "name": "Supreme Burrito",
+                "description": "burrito with beef, cheese, mashed beans, rice, avocado paste, tomatoes, lettuce, corn, and sourcream",
+                "image": "https://twohealthykitchens.com/wp-content/uploads/2017/06/Taco-Cones-Ta-Cones-square.jpg",
+                "price": 8.00
+            }, {
+                "name": "Bean Taco",
+                "description": "beans, lettuce, tomatoes",
+                "image": "https://www.tacobell.com/medias/vegan-hero-001.jpg?context=bWFzdGVyfHJvb3R8ODMwNjR8aW1hZ2UvanBlZ3xoODcvaGQ5Lzg4MDY3NjE1MjkzNzQuanBnfDYyYTBmZWJlOWYyOTdkODNjYmU5OGIzNzM2NGFhZDJjNmFiZTkyZDk0ZDE3OTQ5OWM3NDRmMjhlMDkxY2ExOGE",
+                "price": 5.25
+            }, {
+                "name": "Beaf Taco",
+                "description": "beaf, cheese, lettuce, tomatoes",
+                "image": "https://www.lakegenevacountrymeats.com/wp-content/uploads/Ground-Beef-Tacos.jpg",
+                "price": 6.00
+            }, {
+                "name": "Supreme Taco",
+                "description": "",
+                "image": "https://carlsbadcravings.com/wp-content/uploads/2019/08/carne-asada-street-tacos-21-1.jpg",
+                "price": 7.35
+            }]
         },
         {
             "name": "Sides",
-            "items": 
-            [
-                {
-                    "name":"Nachos and Dip",
-                    "description":"",
-                    "image":"https://www.tasteofhome.com/wp-content/uploads/2017/10/exps36039_SCM153676C02_26_2b-696x696.jpg",
-                    "price":4.50
-                }, {
-                    "name":"Mashed Beans",
-                    "description":"",
-                    "image":"https://www.faithfullyglutenfree.com/wp-content/uploads/2011/02/Refried-Beans-2211589-480x270.jpg",
-                    "price":5.60
-                }, {
-                    "name":"Salad",
-                    "description":"",
-                    "image":"https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad-760x983.jpg",
-                    "price":1.00
-                }, {
-                    "name":"Drink",
-                    "description":"with or without ice, free refills",
-                    "image":"",
-                    "price":
-                }
-            ]
+            "items": [{
+                "name": "Nachos and Dip",
+                "description": "",
+                "image": "https://www.tasteofhome.com/wp-content/uploads/2017/10/exps36039_SCM153676C02_26_2b-696x696.jpg",
+                "price": 4.50
+            }, {
+                "name": "Mashed Beans",
+                "description": "",
+                "image": "https://www.faithfullyglutenfree.com/wp-content/uploads/2011/02/Refried-Beans-2211589-480x270.jpg",
+                "price": 5.60
+            }, {
+                "name": "Salad",
+                "description": "",
+                "image": "https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad-760x983.jpg",
+                "price": 1.00
+            }]
         },
         {
             "name": "Drinks",
-            "items":
-            [
-                {
-                    "name":"Water",
-                    "description":"",
-                    "image":"https://www.shefinds.com/files/2017/02/Ice2.jpg",
-                    "price":0
+            "items": [{
+                    "name": "Water",
+                    "description": "",
+                    "image": "https://www.shefinds.com/files/2017/02/Ice2.jpg",
+                    "price": 0
 
                 },
                 {
-                    "name":"Choice of Soda",
-                    "description":"",
-                    "image":"",
-                    "price":
+                    "name": "Choice of Soda",
+                    "description": "",
+                    "image": "",
+                    "price": 0.25
 
                 },
                 {
-                    "name":"Choice of Juice",
-                    "description":"apple, orange, grape",
-                    "image":"https://www.modernhoney.com/wp-content/uploads/2018/09/Healthy-Juice-Cleanse-Recipes-1.jpg",
-                    "price":0.30
+                    "name": "Choice of Juice",
+                    "description": "apple, orange, grape",
+                    "image": "https://www.modernhoney.com/wp-content/uploads/2018/09/Healthy-Juice-Cleanse-Recipes-1.jpg",
+                    "price": 0.30
                 }
 
             ]

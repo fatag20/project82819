@@ -2,7 +2,7 @@ let orderArray = [];
 
 const populateFood = async function() {
     // console.dir(menuFile);
-    $.getJSON("data/menu-items.json", function(menuData) {
+    $.getJSON("menu-items.json", function(menuData) {
         // console.dir(menuData.menu[0].items[0]);
         console.dir(menuData);
         const foodMenuElement = document.getElementById("food-menu"); // step 1: get parent element from document
@@ -13,6 +13,8 @@ const populateFood = async function() {
             categorySection = document.createElement("section"); // step 2: create new element
             categoryHeading = document.createElement("h3"); // step 2: create new element
             categoryHeading.innerText = category.name; // step 3: create content
+            categoryHeading.classList.add("headerlabel");
+
             categorySection.appendChild(categoryHeading); // step 4: append child
             foodMenuElement.appendChild(categorySection); // step 4: append child 
             let categorySize = 0;
@@ -20,6 +22,7 @@ const populateFood = async function() {
                 // items
                 itemName = document.createElement("h4"); // step 2: create element
                 itemName.innerText = item.name; // step 3: create content
+                /*itemName.classList.add("labelrow");*/
                 categorySection.appendChild(itemName); // step 4: append child
                 itemDesc = document.createElement("p");
                 itemDesc.innerText = item.description;
@@ -43,9 +46,10 @@ const populateFood = async function() {
                     categorySection.appendChild(itemImage);
                     categorySize++;
                 }
-                categorySize++;
+                /*categorySize++;
                 console.log(categorySize + category.name);
-                categorySection.setAttribute("style", "grid-row: span " + categorySize);
+                categorySection.setAttribute("style", "grid-row: span " + categorySize);*/
+
             });
         });
     });
