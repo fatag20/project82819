@@ -1,21 +1,24 @@
 @import url(burger-styles.css);
-body{
+body {
     background-color: #57EDF0;
-    color : #613300;
+    color: #613300;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
-p{
-    margin-top:0px;
-    margin-left: 10px; 
+
+p {
+    margin-top: 0px;
+    margin-left: 10px;
     font-size: 20px;
 }
-p.a{
+
+p.a {
     font-size: 20px;
     font-style: italic;
 }
-p.b{
+
+p.b {
     margin: 10px;
     margin-left: 0px;
     font-size: 60px;
@@ -24,20 +27,22 @@ p.b{
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-pre{
+pre {
     margin-left: 10px;
     margin-top: 0px;
     font-family: Arial;
     color: #550858
 }
-h1{
-    color : #113739;
+
+h1 {
+    color: #113739;
     font-size: 60px;
     font-family: impact;
 }
-h2{
+
+h2 {
     margin-top: 10px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 #food-menu>* {
@@ -55,6 +60,7 @@ h2{
 
 #food-menu button {
     flex-grow: 0;
+    display: block
 }
 
 button {
@@ -62,6 +68,7 @@ button {
     background-color: var(--blue2);
     color: whitesmoke;
     border-width: 0px;
+    display: block
 }
 
 .extra {
@@ -89,7 +96,10 @@ img {
     max-width: 100%;
 }
 
-@media (min-width: 701px)/*(min-width: 52em) and (max-resolution: 199dpi)*/{
+@media (min-width: 701px)
+/*(min-width: 52em) and (max-resolution: 199dpi)*/
+
+{
     #main-nav {
         margin: 0%;
         padding: 0%;
@@ -102,6 +112,7 @@ img {
         margin-left: .5em;
     }
 }
+
 nav ul {
     list-style-type: none;
     /* position: relative; */
@@ -139,13 +150,15 @@ nav ul li:hover {
     height: 100%;
 }
 
-
 .hamburger {
     display: none;
 }
+
+
 /*
     cart
 */
+
 #cart-content {
     display: none;
 }
@@ -156,10 +169,13 @@ nav ul li:hover {
     top: 1em;
 }
 
+@media
+/*(max-width: 700px)*/
 
+(max-width: 52em)
+/*and (min-resolution: 200dpi)*/
 
-
-@media /*(max-width: 700px)*/ (max-width: 52em) /*and (min-resolution: 200dpi)*/ {
+{
     body {
         background-position: 10vw 10vh;
     }

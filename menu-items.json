@@ -32,17 +32,17 @@
             "name": "Sides",
             "items": [{
                 "name": "Nachos and Dip",
-                "description": "",
+                "description": "as named",
                 "image": "https://www.tasteofhome.com/wp-content/uploads/2017/10/exps36039_SCM153676C02_26_2b-696x696.jpg",
                 "price": 4.50
             }, {
                 "name": "Mashed Beans",
-                "description": "",
+                "description": "as named",
                 "image": "https://www.faithfullyglutenfree.com/wp-content/uploads/2011/02/Refried-Beans-2211589-480x270.jpg",
                 "price": 5.60
             }, {
                 "name": "Salad",
-                "description": "",
+                "description": "lettuce, spinach, tomato, pepper, cheese, ranch",
                 "image": "https://www.onceuponachef.com/images/2019/07/Big-Italian-Salad-760x983.jpg",
                 "price": 1.00
             }]
@@ -51,15 +51,15 @@
             "name": "Drinks",
             "items": [{
                     "name": "Water",
-                    "description": "",
+                    "description": "as named",
                     "image": "https://www.shefinds.com/files/2017/02/Ice2.jpg",
                     "price": 0
 
                 },
                 {
                     "name": "Choice of Soda",
-                    "description": "",
-                    "image": "",
+                    "description": "fountain soda",
+                    "image": "http://www.sodadispenserdepot.com/pics/ibd00216B-a.jpg",
                     "price": 0.25
 
                 },

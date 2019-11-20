@@ -10,26 +10,36 @@ const populateFood = async function() {
         // go through each category
         menuData.menu.forEach(category => {
             // section and heading
-            categorySection = document.createElement("section"); // step 2: create new element
-            categoryHeading = document.createElement("h3"); // step 2: create new element
+
+            categoryHeading = document.createElement("p"); // step 2: create new element
             categoryHeading.innerText = category.name; // step 3: create content
             categoryHeading.classList.add("headerlabel");
 
-            categorySection.appendChild(categoryHeading); // step 4: append child
-            foodMenuElement.appendChild(categorySection); // step 4: append child 
+            foodMenuElement.appendChild(categoryHeading); // step 4: append child
+
             let categorySize = 0;
             category.items.forEach(item => {
+                itemRow = document.createElement("div");
+
+                itemRow.classList.add("itemrow");
                 // items
-                itemName = document.createElement("h4"); // step 2: create element
+                itemName = document.createElement("h2"); // step 2: create element
                 itemName.innerText = item.name; // step 3: create content
                 /*itemName.classList.add("labelrow");*/
-                categorySection.appendChild(itemName); // step 4: append child
+                itemRow.appendChild(itemName); // step 4: append child
                 itemDesc = document.createElement("p");
                 itemDesc.innerText = item.description;
-                categorySection.appendChild(itemDesc);
-                itemPrice = document.createElement("b");
+                itemRow.appendChild(itemDesc);
+                if (item.image) {
+                    itemImage = document.createElement("img");
+                    itemImage.setAttribute("src", item.image); //setAttribute
+                    // itemImage.style.background
+                    itemRow.appendChild(itemImage);
+                    categorySize++;
+                }
+                itemPrice = document.createElement("h2");
                 itemPrice.innerText = '$' + item.price;
-                categorySection.appendChild(itemPrice);
+                itemRow.appendChild(itemPrice);
                 // button for online ordering
                 button = document.createElement("button");
                 button.innerText = "Add to Online Order";
@@ -37,15 +47,13 @@ const populateFood = async function() {
                     orderArray.push(item);
                     updateCart(orderArray);
                 }
-                categorySection.appendChild(button);
-                // optional image
-                if (item.image) {
-                    itemImage = document.createElement("img");
-                    itemImage.setAttribute("src", item.image); //setAttribute
-                    // itemImage.style.background
-                    categorySection.appendChild(itemImage);
-                    categorySize++;
-                }
+                itemPrice.appendChild(button);
+
+
+                foodMenuElement.appendChild(itemRow); // step 4: append child 
+                itemRow.childNodes.forEach(child => {
+                    child.classList.add("subboxes");
+                });
                 /*categorySize++;
                 console.log(categorySize + category.name);
                 categorySection.setAttribute("style", "grid-row: span " + categorySize);*/
